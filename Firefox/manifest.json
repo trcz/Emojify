@@ -8,7 +8,7 @@
   "description": "Example description of extension",
 
   "icons": {
-    "48": "extension icon directory (48px ver)"
+    "48": "icons/border-48.png"
   },
   "options_ui": {
       "page": "options.html",
