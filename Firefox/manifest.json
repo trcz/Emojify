@@ -1,0 +1,25 @@
+{
+
+  
+  "manifest_version": 2,
+  "name": "Example name of extension",
+  "version": "0.0.1",
+
+  "description": "Example description of extension",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "options_ui": {
+      "page": "options.html",
+	  "browser_style": true
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.forumname.com/*"],
+      "js": ["emoji.js"]
+    }
+  ]
+
+}
