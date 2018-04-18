@@ -9,24 +9,24 @@ var postbodyArrayLength = postbodyArray.length;
 
 //on-version of function, replacing names with images
 function emojiOn(){
-	var i,j;
+    var i,j;
     for (i=0; i<postbodyArrayLength; i++){
 		for (j=0; j<emojiArrayLength; j++){
-			var replaceText = "<img src="+emojiArray[j][1]+" alt='Image'>"
-			var re = new RegExp(emojiArray[j][0], "g")
-			postbodyArray[i].innerHTML = postbodyArray[i].innerHTML.replace(re, replaceText)
+		    var replaceText = "<img src="+emojiArray[j][1]+" alt='Image'>"
+		    var re = new RegExp(emojiArray[j][0], "g")
+		    postbodyArray[i].innerHTML = postbodyArray[i].innerHTML.replace(re, replaceText)
 		}
 	}
 }
 //off-version of function, removing names from posts
 function emojiOff(){
-	var i,j;
+    var i,j;
     for (i=0; i<postbodyArrayLength; i++){
-		for (j=0; j<emojiArrayLength; j++){
-			var re = new RegExp(emojiArray[j][0], "g")
-			postbodyArray[i].innerHTML = postbodyArray[i].innerHTML.replace(re, '')
-		}
+	for (j=0; j<emojiArrayLength; j++){
+	    var re = new RegExp(emojiArray[j][0], "g")
+	    postbodyArray[i].innerHTML = postbodyArray[i].innerHTML.replace(re, '')
 	}
+    }
 }
 //error function
 function onError(error) {
@@ -39,7 +39,7 @@ function onGot(item) {
     emojiOff();
   }
   else {
-  	emojiOn();
+     emojiOn();
   }
   document.body.style.border = "10px solid " + color;
 }
@@ -101,11 +101,11 @@ if (postbodyArrayLength > 0){
 	//and add show/hide function to window-button
 	var link = document.getElementById('_emojiButton');
 	link.addEventListener('click', function raDa() {
-		var s = document.getElementById("_emojiContainer");
+	    var s = document.getElementById("_emojiContainer");
 	    if (s.style.visibility == "hidden"){
-			s.style.visibility = "visible";
+		    s.style.visibility = "visible";
 		}
 		else{
-			s.style.visibility = "hidden";
+		    s.style.visibility = "hidden";
 		}
 	});
