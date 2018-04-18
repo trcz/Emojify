@@ -2,7 +2,8 @@
 Web browser extension adding twitch-style emojis to forums  
   
 Script replaces names with images in the same way twitch chat does  
-Extension (options mainly) works only with Firefox at the moment
+Extension (options mainly) works only with Firefox at the moment  
+Icon source is Mozilla's manual for WebAPI  
   
 **Assumptions:**  
 -it replaces text with <img> in html body  
