@@ -97,7 +97,8 @@ if (postbodyArrayLength > 0){
 	//inserting window-button to its designed place
 	//emojiButtonSocket.appendChild(emojiButton);
 	
-	//after inserting emoji window and emoji button into page's body we need to grab it and add show/hide function to window-button
+	//after inserting emoji window and emoji button into page's body we need to grab it
+	//and add show/hide function to window-button
 	var link = document.getElementById('_emojiButton');
 	link.addEventListener('click', function raDa() {
 		var s = document.getElementById("_emojiContainer");
